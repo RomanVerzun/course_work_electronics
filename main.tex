@@ -1,0 +1,56 @@
+% !TEX root = main.tex
+
+\documentclass{article} % Document class
+\usepackage{fontspec} % Font selection
+\usepackage{unicode-math} % Math font with Cyrillic support
+\usepackage{graphicx}
+\usepackage{polyglossia} % Language support
+\usepackage{csquotes} % For quotes
+\usepackage{lipsum} % For dummy text instead of blindtext
+\usepackage{comment} % For comments
+\usepackage{amsmath,amsthm} % Math packages (без amssymb)
+\usepackage{hyperref}
+\usepackage{listings} % For code listings
+\usepackage{subfiles}
+\usepackage{booktabs} % For better tables
+\usepackage{array} 
+\usepackage{float} % For [H] table positioning
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{pifont} % For checkmark symbol
+% ...existing code...
+\usepackage{xcolor}
+% ...existing code...
+\usepackage{hyperref} % For hyperlinks
+
+\renewcommand{\arraystretch}{1.2} % увеличенный межстрочный интервал
+
+\sloppy % Enable hyphenation
+
+% Define proper support for № symbol and superscripts in XeLaTeX
+\newcommand{\num}{№}
+\newcommand{\No}{No.}
+
+\setmainlanguage{ukrainian} % Main language
+\setotherlanguage{english} % Secondary language
+\setmainfont{CMU Serif} % Main font
+\setmathfont{latinmodern-math.otf} % Math font with better Cyrillic support
+
+\title{Skeleton of LaTex document}
+\author{Верзун Роман}
+\date{29 Травня 2025}
+
+\begin{document}
+\subfile{1_cover_page.tex} % Cover page
+\subfile{2_task.tex} % Task
+\subfile{3_essay.tex} % Essay
+\subfile{4_main_part.tex} % Main part
+\subfile{5_conclusion.tex} % Conclusion
+\subfile{6_appendices.tex} % Appendices
+\bibliography{biblio}
+\bibliographystyle{plain}
+
+\end{document}
+
